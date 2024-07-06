@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+    <link rel="stylesheet" href="static/css/style2.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Evaluation of Load Carrying Capacity</h1>
+        <br>
+            <h3>{{prediction_text}}</h3>
+    </div>
+
+    <div class="login-container">
+        <div class="form">
+            <form  action="{{ url_for('predict')}}" method="post">
+                <div class="row">
+                    <label for="model">Model:</label>
+                    <select name="model" id="model">
+                        <option value ="0">Choose a model</option>
+                        <option value="1">Linear and Xgboost Reg</option>
+                        <option value="2">Linear and RandomForest Reg</option>
+                        <option value="3">Linear and GradientBoosting Reg</option>
+                        <option value="4">Bagging and GradientBoosting Reg</option>
+                        <option value="5">Bagging and K-nearest Neighbor Reg</option>
+                        <option value="6">Linear and Bagging Reg</option>         
+                    </select>
+                </div>
+                <div class="row">
+                <label for="eccentricity">Eccentricity (mm):</label>
+                <input type="text" id="eccentricity" name="ecc" required>
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Column height (mm):</label>
+                <input type="text" name="Ch" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Compressive strength of std cylinder (MPa):</label>
+                <input type="text" name="CS" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Outer diameter of steel tube (mm):</label>
+                <input type="text" name="od" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Thickness of steel tube (mm):</label>
+                <input type="text" name="th" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Yield strength of tube (MPa):</label>
+                <input type="text" name="ys" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Total thickness of FRP Wraps (mm):</label>
+                <input type="text" name="tt" required="required" />
+            </div>
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">Elastic modulus of FRP (MPa):</label>
+                <input type="text" name="em" required="required" />
+            </div>
+            
+            <div class="row">
+                <label for="inputPassword6" class="col-form-label">c/c spacing of FRP (mm):</label>
+                <input type="text" name="cc" required="required" />
+            </div>
+            <!-- Add more rows for other input fields -->
+            <div class="row">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>This GUI is developed by Ayush Rathore, Rajwinder Singh and Dr Mahesh Patel, Department of Civil Engineering, Dr BR Ambedkar National institute of Technology, Jalandhar, India</p>
+    </footer>
+</body>
+</html>
+
+

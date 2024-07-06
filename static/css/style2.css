@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    background: rgb(186, 212, 230);
+    margin: auto;
+}
+
+.login {
+    text-align: center;
+    padding: 20px;
+    background: rgba(100, 128, 205, 0.8);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.login h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+}
+
+.form {
+    background: rgb(237, 205, 205);
+    border-radius: 8px;
+    border: 5px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-weight: bold;
+    margin: 45px;
+    width: 40vw;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+select:focus,
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background: #3498db;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+footer {
+    background-color: #b1c2e5;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 90vw;
+    }
+}
