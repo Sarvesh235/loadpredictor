@@ -7,7 +7,7 @@ make sure you have python version 3.10.x and pip version 21.2.x
 3. run command 'cd loadpredictor'
 4. run command 'pip install -r requirements.txt'
 5. run command 'python app.py'
-6. open the browser and type the link 'http://127.0.0.1:5000/'.
+6. open the browser and type the link 'http://127.0.0.1:5000'.
 7. and ... you will see the gui like this in below image
    ![Screenshot (377)](https://github.com/ayushrathore111/loadpredictor/assets/94514710/53b843ae-7dcc-4724-97b3-13aac66e5a34)
    
